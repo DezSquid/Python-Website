@@ -14,7 +14,7 @@ body {
     overflow: hidden;
 }
 
-h1, p, nav {
+.slide-down {
     opacity: 0;
     transform: translateY(-100%);
     animation: slideDown 1s forwards;
