@@ -1,17 +1,30 @@
 body {
-    background-color: #121212;
-    color: #f5f5f5;
+    margin: 0;
+    overflow: hidden;
     font-family: 'Courier New', Courier, monospace;
+    color: #f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+}
+
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
 }
 
 .container {
     text-align: center;
     overflow: hidden;
+    z-index: 1;
 }
 
 .slide-down {
