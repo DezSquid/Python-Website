@@ -126,3 +126,22 @@ button:hover {
 .repo p {
     font-size: 1em;
 }
+
+.contact-details h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+.contact-details p {
+    font-size: 1.2em;
+}
+
+.contact-details a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
