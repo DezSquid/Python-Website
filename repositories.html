@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>Repositories - DezSquid's Github Website</title>
+    <link rel="stylesheet" href="Stuff/styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="Stuff/back.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <h1 class="slide-down">My GitHub Repositories</h1>
+        <p class="slide-down">Here are my current GitHub repositories. This list updates automatically.</p>
+        <div id="repos" class="slide-down"></div>
+        <nav class="slide-down">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="repositories.html">Repositories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('https://api.github.com/users/DezSquid/repos')
+                .then(response => response.json())
+                .then(data => {
+                    const repoContainer = document.getElementById('repos');
+                    data.forEach(repo => {
+                        const repoElement = document.createElement('div');
+                        repoElement.classList.add('repo');
+                        repoElement.innerHTML = `
+                            <h2><a href="${repo.html_url}" target="_blank">${repo.name}</a></h2>
+                            <p>${repo.description || 'No description available'}</p>
+                        `;
+                        repoContainer.appendChild(repoElement);
+                    });
+                })
+                .catch(error => console.error('Error fetching repositories:', error));
+        });
+    </script>
+</body>
+</html>

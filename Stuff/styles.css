@@ -103,3 +103,21 @@ button {
 button:hover {
     background-color: #00cc00;
 }
+
+#repos {
+    margin-top: 20px;
+}
+
+.repo {
+    margin-bottom: 20px;
+}
+
+.repo h2 {
+    margin: 0;
+    font-size: 1.5em;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+.repo p {
+    font-size: 1em;
+}
