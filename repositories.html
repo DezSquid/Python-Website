@@ -32,15 +32,16 @@
                 .then(response => response.json())
                 .then(data => {
                     const repoContainer = document.getElementById('repos');
-                    data.forEach(repo => {
-                        const repoElement = document.createElement('div');
-                        repoElement.classList.add('repo');
-                        repoElement.innerHTML = `
-                            <h2><a href="${repo.html_url}" target="_blank">${repo.name}</a></h2>
-                            <p>${repo.description || 'No description available'}</p>
-                        `;
-                        repoContainer.appendChild(repoElement);
-                    });
+                    data.filter(repo => repo.name !== 'DezSquid')
+                        .forEach(repo => {
+                            const repoElement = document.createElement('div');
+                            repoElement.classList.add('repo');
+                            repoElement.innerHTML = `
+                                <h2><a href="${repo.html_url}" target="_blank">${repo.name}</a></h2>
+                                <p>${repo.description || 'No description available'}</p>
+                            `;
+                            repoContainer.appendChild(repoElement);
+                        });
                 })
                 .catch(error => console.error('Error fetching repositories:', error));
         });
