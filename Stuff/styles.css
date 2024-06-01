@@ -2,11 +2,12 @@ body {
     margin: 0;
     overflow: hidden;
     font-family: 'Courier New', Courier, monospace;
-    color: #f5f5f5;
+    color: #e0e0e0; /* Light gray for text */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: #121212; /* Dark background to match common dark-themed videos */
 }
 
 #background-video {
@@ -36,7 +37,7 @@ body {
 h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    text-shadow: 0 0 10px #00ff00;
+    text-shadow: 0 0 10px #00bfff; /* Light blue shadow for text */
     animation-delay: 0.2s;
 }
 
@@ -57,7 +58,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00ff00;
+    color: #00bfff; /* Light blue for links */
     text-decoration: none;
     font-weight: bold;
 }
@@ -87,12 +88,12 @@ input, textarea {
     padding: 10px;
     border: 1px solid #333;
     border-radius: 5px;
-    background-color: #1e1e1e;
+    background-color: #1e1e1e; /* Dark background for inputs */
     color: #f5f5f5;
 }
 
 button {
-    background-color: #00ff00;
+    background-color: #00bfff; /* Light blue for buttons */
     color: #121212;
     border: none;
     padding: 10px 20px;
@@ -101,7 +102,7 @@ button {
 }
 
 button:hover {
-    background-color: #00cc00;
+    background-color: #0099cc; /* Darker blue on hover */
 }
 
 #repos {
@@ -115,11 +116,11 @@ button:hover {
 .repo h2 {
     margin: 0;
     font-size: 1.5em;
-    text-shadow: 0 0 5px #00ff00;
+    text-shadow: 0 0 5px #00bfff;
 }
 
 .repo h2 a {
-    color: #00ff00;
+    color: #00bfff;
     text-decoration: none;
 }
 
@@ -130,7 +131,7 @@ button:hover {
 .contact-details h2 {
     margin: 10px 0;
     font-size: 1.5em;
-    text-shadow: 0 0 5px #00ff00;
+    text-shadow: 0 0 5px #00bfff;
 }
 
 .contact-details p {
@@ -138,7 +139,7 @@ button:hover {
 }
 
 .contact-details a {
-    color: #00ff00;
+    color: #00bfff;
     text-decoration: none;
 }
 
