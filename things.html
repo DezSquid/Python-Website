@@ -6,7 +6,7 @@
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="0">
     <meta http-equiv="pragma" content="no-cache">
-    <title>DezSquid's Github Website</title>
+    <title>Things</title>
     <link rel="stylesheet" href="Stuff/styles.css">
 </head>
 <body>
@@ -15,8 +15,9 @@
         Your browser does not support the video tag.
     </video>
     <div class="container">
-        <h1 class="slide-down">Welcome To My Website</h1>
-        <p class="slide-down">This is my website for anything I can think of.</p>
+        <h1 class="slide-down">Things</h1>
+        <p class="slide-down">List of files in the Things folder:</p>
+        <ul id="file-list" class="slide-down"></ul>
         <nav class="slide-down">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -27,5 +28,22 @@
             </ul>
         </nav>
     </div>
+    <script>
+        // Simulated list of files in the Things folder
+        const files = ['file1.txt', 'file2.pdf', 'file3.jpg'];
+
+        // Function to display files in the list
+        function displayFiles() {
+            const fileList = document.getElementById('file-list');
+            files.forEach(file => {
+                const listItem = document.createElement('li');
+                listItem.textContent = file;
+                fileList.appendChild(listItem);
+            });
+        }
+
+        // Call the function to display files on page load
+        window.onload = displayFiles;
+    </script>
 </body>
 </html>
