@@ -155,3 +155,20 @@ button:hover {
 .no-underline:hover {
     text-decoration: underline;
 }
+
+button.no-underline {
+    background-color: transparent;
+    border: none;
+    color: #00bfff; /* Same color as Send Message button text */
+    cursor: pointer;
+    margin-top: 20px; /* Adds space between Send Message and Back buttons */
+}
+
+button.no-underline:hover {
+    text-decoration: underline;
+}
+
+.back-button {
+    display: block;
+    margin-top: 20px; /* Ensures it is farther from the Send Message button */
+}
