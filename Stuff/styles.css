@@ -1,19 +1,6 @@
 body {
     margin: 0;
-    overflow: hidbody {
-    margin: 0;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #121212;
-    color: #00d4ff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     overflow: hidden;
-}
-
-#background-video {
-    position: fixedden;
     font-family: 'Courier New', Courier, monospace;
     color: #e0e0e0; /* Light gray for text */
     display: flex;
