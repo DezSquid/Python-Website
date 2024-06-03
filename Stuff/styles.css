@@ -146,3 +146,12 @@ button:hover {
 .contact-details a:hover {
     text-decoration: underline;
 }
+
+.no-underline {
+    text-decoration: none;
+    color: #00bfff; /* Light blue for links */
+}
+
+.no-underline:hover {
+    text-decoration: underline;
+}
