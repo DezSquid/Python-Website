@@ -16,8 +16,13 @@
     </video>
     <div class="container">
         <h1 class="slide-down">Things</h1>
-        <p class="slide-down">List of files in the Things folder:</p>
-        <ul id="file-list" class="slide-down"></ul>
+        <p class="slide-down">May need to disable antivirus to download some files</p>
+        <ul id="file-list" class="slide-down">
+            <li>
+                <a href="https://github.com/DezSquid/Website/blob/main/Things/Zip%20Zomb.zip" download>Zip Zomb.zip</a>
+                <p>This is a Zip Bomb. Extract to use.</p>
+            </li>
+        </ul>
         <nav class="slide-down">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -28,22 +33,5 @@
             </ul>
         </nav>
     </div>
-    <script>
-        // Simulated list of files in the Things folder
-        const files = ['file1.txt', 'file2.pdf', 'file3.jpg'];
-
-        // Function to display files in the list
-        function displayFiles() {
-            const fileList = document.getElementById('file-list');
-            files.forEach(file => {
-                const listItem = document.createElement('li');
-                listItem.textContent = file;
-                fileList.appendChild(listItem);
-            });
-        }
-
-        // Call the function to display files on page load
-        window.onload = displayFiles;
-    </script>
 </body>
 </html>
