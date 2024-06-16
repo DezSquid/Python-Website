@@ -1,1 +1,1 @@
-https://dezsquid.github.io/Python-Website/
+https://dezsquid.github.io/Website/
